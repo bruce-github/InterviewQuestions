@@ -47,6 +47,7 @@ void ReplaceBlank(char string[], int length)
     }
 }
 */
+//==============My code begin=========================
 void MyReplaceBlank(string &str)
 {
 	if (str.empty())
@@ -101,8 +102,7 @@ void ReplaceBlank(char str[], int length)
 	}
 	return;
 }
-
-
+//================My code end===================
 
 void Test(char* testName, char string[], int length, char expected[])
 {

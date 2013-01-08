@@ -51,6 +51,7 @@ void CMyString::Print()
 	cout << m_pData << endl;
 }
 
+//===============My code begin========================
 CMyString &CMyString::operator = (const CMyString &str)
 {
 	if (&str != this)
@@ -64,6 +65,7 @@ CMyString &CMyString::operator = (const CMyString &str)
 
 	return *this;
 }
+//====================My code end=================================
 
 //=====================test==================
 
