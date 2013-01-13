@@ -2,7 +2,7 @@ CXX = g++
 INCLUDE = ../Utilities/
 CXXFLAGS = -g -Wall
 
-mytest: PrintListInReversedOrder.o $(INCLUDE)List.o
+a.out: PrintListInReversedOrder.o $(INCLUDE)List.o
 	$(CXX) -o mytest PrintListInReversedOrder.o $(INCLUDE)List.o
 $(INCLUDE)List.o: $(INCLUDE)List.cpp $(INCLUDE)List.h
 	cd ../Utilities/ && $(MAKE)
