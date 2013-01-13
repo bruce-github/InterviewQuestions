@@ -2,10 +2,12 @@
 #include "List.h"
 #include <stack>
 #include <cstdio>
+#include <iostream>
 
 using namespace std;
 using namespace bruce;
 
+//===================My code begin================================
 void PrintListReversingly_Iteratively(ListNode* pHead)
 {
     std::stack<ListNode*> nodes;
@@ -20,7 +22,7 @@ void PrintListReversingly_Iteratively(ListNode* pHead)
     while(!nodes.empty())
     {
         pNode = nodes.top();
-        printf("%d\t", pNode->m_nValue);
+		cout << pNode->m_nValue << "\t";
         nodes.pop();
     }
 }
@@ -33,11 +35,11 @@ void PrintListReversingly_Recursively(ListNode* pHead)
         {
             PrintListReversingly_Recursively(pHead->m_pNext);
         }
- 
-        printf("%d\t", pHead->m_nValue);
+
+		cout << pHead->m_nValue << "\t";
     }
 }
-
+//==================My code end=================================
 void Test(ListNode* pHead)
 {
     PrintList(pHead);
